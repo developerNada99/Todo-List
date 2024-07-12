@@ -1,0 +1,140 @@
+/* src/TodoList.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d5e0ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8d85ff;
+  text-shadow: 0 0 5px #fff,
+  0 0 10px #8d85ff;
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.inp{
+    display: flex;
+    justify-content: center;
+}
+.input-container {
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+}
+
+input:focus{
+  outline: none;
+  width: 75%;
+}
+button:focus{
+  outline: none;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #673ee5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 1s
+}
+
+button:hover{
+  background-color: #8d85ff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  animation: slideInRight 0.5s ease-in-out;
+  color: #8d85ff;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+span {
+  cursor: pointer;
+}
+
+button.task-button {
+  background-color: #dc3545;
+}
+
+button.task-button,
+span {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+}

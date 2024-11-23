@@ -2,18 +2,20 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #d5e0ff;
-  margin: 0;
+  margin: 50px;
   padding: 0;
+  overflow: hidden;
 }
-
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
+.app{
+  width: 50%;
+  height: 500px;
+  background-color: #967ce3;
+  margin: auto;
+  border-radius: 50px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  animation: fadeIn 0.5s ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #967ce3 #673ee5;
 }
 
 @keyframes fadeIn {
@@ -29,7 +31,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #8d85ff;
+  color: #673ee5;
   text-shadow: 0 0 5px #fff,
   0 0 10px #8d85ff;
   animation: slideInDown 0.5s ease-in-out;
@@ -93,6 +95,10 @@ button:hover{
   background-color: #8d85ff;
 }
 
+.divbtn button{
+  margin-right: 10px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -106,7 +112,7 @@ li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
   animation: slideInRight 0.5s ease-in-out;
-  color: #8d85ff;
+  color: #fff;
 }
 
 @keyframes slideInRight {
@@ -120,11 +126,13 @@ li {
 
 span.completed {
   text-decoration: line-through;
-  color: #999;
+  color: #b6acac;
 }
 
 span {
   cursor: pointer;
+  width: 70%;
+  overflow: hidden;
 }
 
 button.task-button {
